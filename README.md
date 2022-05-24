@@ -1,6 +1,5 @@
-# goit-markup-hw-05
+# goit-markup-hw-06
 
 What's new?
-- positioning of elements;
-- animated on hover/focus including shadows, colors, svg fills;
-- modal window linked with js script on "Click to order" button.
+- within the modal window added form application;
+- in the footer added input field and button.
