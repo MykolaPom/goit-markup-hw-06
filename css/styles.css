@@ -340,11 +340,20 @@ img {
   color: var(--main-text-color);
   margin-bottom: 12px;
 }
+
+.input-fields {
+  margin-bottom: 10px;
+}
+
 .form-field {
   position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
+}
+
+.form-field:last-child {
+  margin-bottom: 0;
 }
 
 .form-comment {
@@ -410,7 +419,7 @@ img {
   padding: 12px 16px;
   cursor: pointer;
   resize: none;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -424,12 +433,17 @@ img {
   color: rgba(117, 117, 117, 0.5);
 }
 
+.form-comment {
+  margin-bottom: 20px;
+}
+
 .label-policy {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
+  line-height: 1.71;
   color: var(--secondary-text-color);
 }
 
@@ -471,12 +485,10 @@ img {
   }
 
 .check-box {
-  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 0;
-  left: 10px;
+  margin-right: 7px;
   cursor: pointer;
 }
 
@@ -484,6 +496,10 @@ img {
 .check-box:focus-within .checkbox-unchecked {
   border-color: #188CE8;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.policy-link {
+  letter-spacing: 0.03em;
 }
 
 .terms-of-policy {
@@ -1053,6 +1069,8 @@ letter-spacing: 0.03em;
   font-size: 16px;
   line-height: 1.88;
   display: flex;
+  align-items: center;
+  justify-content: center;
   margin: auto;
   letter-spacing: 0.06em;
   border-radius: 4px;
